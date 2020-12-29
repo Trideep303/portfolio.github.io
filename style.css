@@ -1,0 +1,567 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+    flex-wrap: wrap;
+
+}
+[class*="col-"]
+{
+    width: 100%;
+}
+.dotted{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+/* navbar design starts here */
+.navbar
+{
+    background: radial-gradient(circle, #7401DF, #00BFFF, #A5DF00);
+    padding: 15px;
+    text-align: center;
+}
+.navlogo
+{
+    padding: 2%
+}
+.navlogo img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px white solid;
+
+}
+.navhead h2
+{
+    font-size: 2rem;
+    color: white;
+
+}
+.navhead
+{
+    padding-top: 2%;
+
+}
+.navmenu
+{
+    display: flex;
+    flex-direction: column;
+}
+.navmenu a
+{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: rgba(86, 101, 115,0.3);
+    border-radius: 20px;
+    margin: 5px 0px;
+    color: white;
+    transition: 0.5s;
+}
+.navmenu a:hover
+{
+    background-color: #8E44AD;
+}
+
+.navbar::after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* navbar design ends here */
+
+
+
+/* profile design starts from here */
+
+.profile
+{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    background-color: #CD6155;
+    height: 730px;
+
+
+
+}
+.profile .top{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: 2s;
+    margin-bottom: 120px;
+  }
+  .title
+  {
+      padding: 20px;
+      margin-top: 80px;
+      transition: 1s;
+  }
+
+  .profile .top:hover{
+      transform: rotate(360deg);
+  }
+
+  .title h4{
+    font-family: 'Lobster', cursive;
+      font-size: 3rem;
+      font-weight: 700;
+  }
+
+  .title:hover
+  {
+      transform: scale(1.2);
+  }
+
+  .title p{
+      color: white;
+      margin: 0 auto 20px auto;
+      text-align: center;
+      width: 90%;
+        font-weight: 700;
+  }
+
+
+  .bottom{
+
+      left: 60px;
+      position: absolute;
+      top: 600px;
+      transition: 2s;
+  }
+
+  .profile .bottom:hover{
+      transform: rotate(360deg);
+  }
+
+  .profile::after{
+      content: '';
+      clear: both;
+      display: table;
+  }
+
+/* profile design ends here */
+
+/* About Me design starts here */
+
+.aboutme{
+
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1% 7%;
+    text-align: center;
+
+
+}
+
+.aboutme p{
+
+    text-align: center;
+}
+
+.about-img img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+
+
+}
+
+
+.about-desc p{
+    font-size: 1.2rem;
+}
+.aboutme a
+{
+    text-decoration: none;
+    color: white;
+}
+.aboutme a:hover
+{
+    color: #4A235A;
+    font-weight: 700;
+}
+
+.aboutme ::after
+{
+    clear: both;
+    display: table;
+    content: '';
+}
+.aboutme button
+{
+    padding: 20px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 21px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* About Me ends here */
+
+
+/* professional experience div starts here  */
+.professional-experience{
+    padding: 1% 0%;
+}
+.professional-experience a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    height: 650px;
+    margin-bottom: 20px;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.card-title h2{
+    background-color: #616161 ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+
+/* progress bar for skill div starts here  */
+.skills-container li{
+    font-weight: bolder;
+    list-style: none;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153, .5);
+    border-radius: 1000px;
+}
+
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: rgb(86, 86, 153, 1);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    animation-iteration-count: 3;
+}
+
+
+.skills-container li.word::after{
+   animation-name: word;
+}
+
+@keyframes word{
+    to{
+        width: 90%;
+
+    }
+}
+.skills-container li.excel::after{
+   animation-name: excel;
+}
+
+@keyframes excel{
+    to{
+        width: 60%;
+    }
+}
+
+.skills-container li.power::after{
+    animation-name: power;
+ }
+
+ @keyframes power{
+     to{
+         width: 95%;
+     }
+ }
+
+.skills-container li.html::after{
+   animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 96.2%;
+    }
+}
+
+.skills-container li.css::after{
+    animation-name: css;
+ }
+
+ @keyframes css{
+     to{
+         width: 92%;
+     }
+ }
+
+
+
+.skills-container li.number::after{
+   animation-name: number;
+}
+
+@keyframes number{
+    to{
+        width: 85%;
+    }
+}
+
+.skills-container li.adobe::after{
+    animation-name: adobe;
+ }
+
+ @keyframes adobe{
+     to{
+         width: 20%;
+
+     }
+ }
+
+ .skills-container li.spoken::after{
+    animation-name: spoken;
+ }
+
+ @keyframes spoken{
+     to{
+         width: 70%;
+
+     }
+ }
+
+
+
+/* progress bar for skill div starts here  */
+
+
+
+.professional-experience::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+/* professional-experience div ends here  */
+
+/* my works design starts from here */
+
+.works
+{
+    background-color: #0B615E;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.works p
+{
+    font-size: 2rem;
+    color: red;
+    padding: 10px;
+}
+
+.works span
+{
+    font-size: 2rem;
+}
+.img-card img
+{
+    width: 100%;
+    border: 5px #8A0886 solid;
+    border-radius: 10px;
+    margin-bottom: 6px;
+
+}
+.img-card
+{
+    padding: 20px;
+}
+.img-card img:hover
+{
+
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+.works h2
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.works::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* my works design ends here */
+
+
+/* contact design starts here */
+.contact
+{
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.knowledge ul li
+{
+    text-align: left;
+    margin: 30px;
+}
+.contact{
+    text-align: center;
+}
+
+.contact input, textarea{
+    /* width: 80%;
+    transition: width 0.3s ease-in-out; */
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 15px;
+    width: 100px;
+}
+.message button:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+
+.more button
+{
+    background-color: white;
+
+}
+
+
+
+.more .btn:hover
+
+{
+    background-color: gray;
+
+}
+.btn:focus
+{
+    border-radius: 25px;
+    border: none;
+}
+.contact::after
+{
+    clear: both;
+    content: '';
+    display: table;
+}
+/* contact ends here */
+
+
+/* footer design starts  here */
+
+footer
+{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    align-items: center;
+
+}
+
+
+footer::after
+{
+    clear: both;
+    content: '';
+    display: table;
+}
+footer .menu a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+
+}
+span
+{
+    color: red;
+    font-size: 25px;
+}
+footer .menu
+{
+    margin-top: 10px;
+}
+
+
+/* footer design ends here */

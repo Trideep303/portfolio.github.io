@@ -1,0 +1,50 @@
+img
+{
+    height: 200px;
+    width: 300px;
+    
+}
+section
+{
+    background-color: hotpink;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    
+    margin: 10px;
+    
+}
+.main-div
+{
+    background-color: cadetblue;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+.topic
+{
+    text-align: center;
+    color: white;
+    
+
+}
+.desc
+{
+    color: white;
+    text-align: justify;
+}
+section:hover
+{
+    box-shadow: 10px 10px 5px white;
+    cursor: pointer;
+}
+

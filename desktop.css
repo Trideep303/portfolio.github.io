@@ -1,0 +1,172 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"]
+{
+    float: left;
+    padding: 10px;
+}
+
+/* navbar design starts here */
+.navbar
+{
+    position: relative;
+    flex-direction: row;
+}
+.navlogo
+{
+    text-align: left;
+}
+.navhead
+{
+    text-align: right;
+}
+.navmenu 
+{
+    justify-content: flex-end;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+.navmenu a
+{
+    background: transparent;
+    margin: 0px 3px;
+    padding: 10px;
+  
+    
+    
+}
+.navmenu a:hover
+{
+    background-color: gray;
+    transform: scale(1.2);
+}
+
+/* navbar design ends here */
+
+
+
+
+
+/* profile design starts here */
+
+.profile .top{
+    position: absolute;
+    right: 140px;
+    top: 20px; 
+    width: 120px; 
+    transition: width 2s, transform 2s;
+  }
+  
+  .profile .top:hover{
+     width: 140px;
+  }
+  
+  
+  .title h1{
+      font-size: 3rem;
+      
+  }
+  
+  .title p{   
+      color: white;
+      margin: 0 auto; 
+      width: 50%; 
+	font-weight: bolder;
+      text-align: center;  
+      margin-bottom: 10px; 
+  }
+  
+  .profile .bottom{
+      position: absolute;
+      left: 140px;
+      top: 450px;
+      width: 120px; 
+      transition: width 2s, transform 2s;
+  } 
+  
+  .profile .bottom:hover{
+      width: 140px;   
+  } 
+  .profile
+  {
+      height: 580px;
+  }
+ 
+/* profile design ends here */
+
+/* about design starts */
+
+.aboutme{
+   
+    background-color: #39a4ac;
+    color: white;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 1% 7%;  
+    text-align: center; 
+    margin-top: 60px;
+}
+
+.about-img{
+    margin-bottom: 150px;
+    position: relative;
+    
+}
+
+.about-img img{   
+    height: 270px;
+    width: 250px;
+    position: absolute;
+    top:  130px;
+    left: 120px;
+     
+}
+.about-desc p{
+    text-align: left;
+}
+.abt-sec
+{
+    display: flex;
+    
+}
+
+/* about design ends here */
+
+/* contact design starts here */
+.message form input
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+/* contact design ends here */
+
+/* FOOTER DESIGN STARTS HERE */
+
+footer .menu a
+{
+    
+    display: inline;
+}
+
+
+/* FOOTER DESIGN ENDS HERE */
